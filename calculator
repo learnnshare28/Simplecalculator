@@ -1,0 +1,97 @@
+import math
+def add( a,b ):
+    return a + b
+def sub( a, b ):
+    return a - b
+def mul( a, b ):
+    return a * b
+def div( a, b ):
+    return a / b
+def mod ( a, b):
+    return a % b
+def cinterest ( p, r, n, t ):
+    return p * m.pow((1 + r/n), n * t)
+def sinterest ( p, t, r ):
+    return ( p * t * r )/100
+
+print("select operation. ")
+print(" 1.Add")
+print(" 2.Subtract")
+print(" 3.Multiply")
+print(" 4.Divide")
+print(" 5.cinterest")
+print(" 6.sinterest")
+while True :
+    choice = input("Enter choice(1/2/3/4/5/6): ")
+    if choice in ('1', '2', '3',  '4', ):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        if choice == '1':
+             res = num1 + num2
+             print("Result = ", res)
+        elif choice == '2':
+               res = num1 - num2
+               print("Result = ", res)
+        elif choice == '3':
+               res = num1 * num2
+               print("Result = ", res)
+        elif choice == '4':
+               res = num1 / num2
+               print("Result", res)
+    elif choice in ('5', '6',):
+        p = float(input("Enter principal: "))
+        t = float(input("Enter the time in years: "))
+        r = float(input("Enter the rate of interest: "))
+        if choice == '1':
+              res = num1 + num2
+              print("Result = ", res)
+        elif choice == '2':
+              res = num1 - num2
+              print("Result = ", res)
+        elif choice == '3':
+              res = num1 * num2
+              print("Result = ", res)
+        elif choice == '4':
+              res = num1 / num2
+              print("Result", res)
+        elif choice == '5':
+              res = p * (math.pow((1 + r / 100), t))
+              print("Result = ", res)
+        elif choice == '6':
+              res = p * t * r
+              print("Result", res)
+        break
+    else:
+        print("Invalid Input")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
